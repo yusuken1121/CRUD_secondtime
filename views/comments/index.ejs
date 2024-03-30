@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>index</h1>
+    <a href="/comments/new">New comment</a>
+    <% for (const c of comments) { %>
+        <h2><%= c.username %></h2>
+        <p>id <%= c.id %></p>
+        <p>comment :<b><%= c.comment %></b></p>
+        <a href="/comments/<%= c.id %>">detail</a>
+
+        <br><br>
+    <% } %>
+    
+
+
+
+</body>
+</html>
